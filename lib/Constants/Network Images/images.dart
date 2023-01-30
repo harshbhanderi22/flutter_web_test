@@ -1,0 +1,2 @@
+const logo =
+    'https://pps.whatsapp.net/v/t61.24694-24/315783841_1853099415069261_2923862755544609951_n.jpg?ccb=11-4&oh=01_AdT2bagwU1EW4SAG8KtJ0MdrAq5HoMqZFrFyh35eJ1mAYg&oe=63E4B329';
