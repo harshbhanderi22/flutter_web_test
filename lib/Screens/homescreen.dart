@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:web_test/Widgets/HomeWidget/home_content.dart';
 import 'package:web_test/Widgets/Navigation%20Bar/navbar.dart';
 import 'package:web_test/Widgets/Navigation%20Bar/navbar_drawer.dart';
 
@@ -19,10 +20,7 @@ class _HomePageState extends State<HomePage> {
         padding: const EdgeInsets.symmetric(horizontal: 50),
         child: Column(
           mainAxisSize: MainAxisSize.max,
-          children: const [
-            NavBar(),
-
-            ],
+          children: const [NavBar(), HomeContent()],
         ),
       ),
     );

@@ -17,7 +17,7 @@ class _NavBarState extends State<NavBar> {
       if (constraint.maxWidth < 640) {
         return const NavBarMobile();
       } else if (constraint.maxWidth < 1007) {
-        return const NavBarTablet();
+        return const NavBarDesktop();
       } else {
         return const NavBarDesktop();
       }

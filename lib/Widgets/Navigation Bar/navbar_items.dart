@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:web_test/Screens/about.dart';
 
 class NavBarItem extends StatelessWidget {
   final String title;
@@ -13,9 +14,20 @@ class NavBarItem extends StatelessWidget {
     double size = width < 640 ? 14 : 18;
     return Padding(
       padding: const EdgeInsets.only(right: 10),
-      child: Text(
-        title,
-        style: TextStyle(fontSize: size),
+      child: GestureDetector(
+        onTap: () {
+          Navigator.push(
+            context,
+            PageRouteBuilder(
+                pageBuilder: (context, animation1, animation2) => AboutUs(),
+                transitionDuration: Duration.zero,
+                reverseTransitionDuration: Duration.zero),
+          );
+         },
+        child: Text(
+          title,
+          style: TextStyle(fontSize: size),
+        ),
       ),
     );
   }
